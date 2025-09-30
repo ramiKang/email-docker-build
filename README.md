@@ -78,4 +78,4 @@ When using `docker-compose.yml`, the following fields can be customized:
   #### 6. (Option) Launch JupyterLab inside the container (in Docker Env)
   ```bash
   jupyter lab --ip=0.0.0.0 --port={jupyter_port} --allow-root # e.g) jupyter lab --ip=0.0.0.0 --port=8888 --allow-root
-  ```bash
+  ```
