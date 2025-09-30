@@ -1,0 +1,15 @@
+# All required CUDA packages
+cuda-command-line-tools-12-5
+cuda-cudart-dev-12-5
+cuda-nvcc-12-5
+cuda-cupti-12-5
+cuda-nvprune-12-5
+cuda-libraries-12-5
+cuda-nvrtc-12-5
+libcufft-12-5
+libcurand-12-5
+libcusolver-12-5
+libcusparse-12-5
+libcublas-12-5
+
+# Other packages

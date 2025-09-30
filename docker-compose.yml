@@ -1,0 +1,17 @@
+services:
+  email-docker-app:
+    image: email-analysis-base:latest
+    container_name: email_env_haram # e.g) email_analysis_docker_env_{your name}
+    volumes:
+      - ./workspace:/workspace
+    ports:
+      - "12300:8888" # host:container
+    stdin_open: true
+    tty: true
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]
