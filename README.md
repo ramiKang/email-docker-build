@@ -64,16 +64,18 @@ When using `docker-compose.yml`, the following fields can be customized:
   ssh -L {jupyter_port}:localhost:{host_port} {user_name}@unlv-genAI.cs.unlv.edu # e.g ) ssh -L 8888:localhost:12300 haramkang@unlv-genAI.cs.unlv.edu
   ```
 
-  #### 4. Start the container
+  ### 4. Start the container
   ```bash
   cd email-docker-env
   docker compose up -d
   ```
 
-  #### 5. Access the container
+  ### 5. Access the container
   ```bash
   docker exec -it {container_name} bash # e.g) docker exec -it email_env_haram bash
   ```
 
-  #### 6. (Option) Launch JupyterLab inside the container
+  #### 6. (Option) Launch JupyterLab inside the container (in Docker Env)
+  ```bash
   jupyter lab --ip=0.0.0.0 --port={jupyter_port} --allow-root # e.g) jupyter lab --ip=0.0.0.0 --port=8888 --allow-root
+  ```bash
